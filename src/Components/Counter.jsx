@@ -1,10 +1,10 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { addCnt, decCnt } from '../store/actions';
+import { addCnt, decCnt } from '../store/counter/action';
 
 export const Counter = () => {
     const dispatch = useDispatch();
-    const count = useSelector(state => state.count);
+    const count = useSelector(state => state.counter.count);
     // let count = 0;
     console.log("rendering counter");
 
